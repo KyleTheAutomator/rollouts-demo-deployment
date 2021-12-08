@@ -33,10 +33,10 @@ spec:
               port: http
   strategy:
      blueGreen:
-#       activeService: rollouts-demo
-#       previewService: rollouts-demo-preview
-#       autoPromotionEnabled: false
-     canary:
-       steps:
-       - setWeight: 20
-       - pause: {}
+       activeService: rollouts-demo
+       previewService: rollouts-demo-preview
+       autoPromotionEnabled: false
+#     canary:
+#       steps:
+#       - setWeight: 20
+#       - pause: {}
